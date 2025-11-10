@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid Practice</title>
+   
+    <style>
+        .product-info {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 70px;
+            padding-top: 0;
+            font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;
+            margin-top: 0;
+            font-size: larger;
+        }
+
+
+        .product-price {
+            font-weight: 600;
+            font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Neue, Arial, sans-serif;
+            line-height: 10px;
+            margin-top: 0;
+            font-size: larger;
+        }
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  
+}
+.left-section {
+    align-items: center;
+    display: flex;
+}
+.right-section {
+margin-right: 20px;
+width: 200px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-right: 100px;
+flex-shrink: 0;
+}
+.search-bar {
+   flex: 1;
+   height: 36px;
+   padding-left: 10px;
+   font-size: 16px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: rgb(190, 190, 190);
+   border-radius: 2px;
+   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+   
+}
+.search-bar::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-container {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 1400px;
+}
+.scroll-container img {
+  padding: 10px;
+}
+.hambuger-menu  {
+    height: 36px;
+    margin-left: 25px;
+    margin-right: 24px;
+}
+.jumia-logo {
+height: 54px;
+}
+.cart-icon {
+height: 50px;
+
+}
+.account-button{
+height: 40px;
+
+}
+
+    </style>
+</head>
+<body style="
+margin-left: 0;
+margin-right: 0;
+">
+    <div class="header">
+        <div class="left-section">
+            <img class="hambuger-menu" src="icons/hambuger-menu.png">
+         <img class="jumia-logo" src="icons/download.png">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search products, brands and categories">
+            
+        </div>
+        <div class="right-section">
+            <button class="account-button">
+                ACCOUNT
+            </button>
+            
+            <img  class="cart-icon" src="icons/cart.png" height="40px"> 
+      
+   <span style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; color: #333; font-weight: 300; padding-right: 70px;">CART</span> 
+       </div>
+           </div>
+    </div>
+   
+
+
+    <div class="scroll-container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; column-gap: 7px;">
+            <div>
+        <img src="products/1.jpg">
+<div style="padding-left: 30px; 
+line-height: 40px;
+font-family: Arial, Helvetica, sans-serif;
+ margin-left: 0;"> Mi&plus; 43&rdquo; Inches Frameless&#8729;&#8729;&#8729;&#8729;
+ </div>
+   <div style="padding-left: 30px; 
+
+   font-family: Arial, Helvetica, sans-serif;"> &#8358; 199&comma;199
+   </div> 
+           </div>
+            <div>
+            <img src="products/2.jpg">
+<div style="padding-left: 30px; 
+ line-height: 40px;
+font-family: Arial, Helvetica, sans-serif;"> Royal 32 Inches Digital&#8729;&#8729;&#8729;&#8729;
+</div>
+   <div style="padding-left: 30px; 
+   font-family: Arial, Helvetica, sans-serif;">&#8358; 123&comma;900
+   </div> 
+           </div>
+             <div>
+            <img src="products/3.jpg">
+          <div style="padding-left: 30px; 
+          line-height: 40px;
+          font-family: Arial, Helvetica, sans-serif;">Royal 50&rdquo; Inch QLED TV &#8729;&#8729;&#8729;&#8729;
+          </div>
+   <div style="padding-left: 30px; 
+   font-family: Arial, Helvetica, sans-serif;"> &#8358; 313&comma;950
+   </div> 
+           </div>
+            <div> 
+            <img src="products/5.jpg">
+<div style="padding-left: 30px;
+line-height: 40px;
+ font-family: Arial, Helvetica, sans-serif;">Nexus 43&rdquo; Inch Digital S &#8729;&#8729;&#8729;&#8729;
+ </div>
+   <div style="padding-left: 40px; 
+   font-family: Arial, Helvetica, sans-serif;"> &#8358; 208&comma; 795
+   </div> 
+           </div>
+         <div> 
+            <img src="products/6.jpg">
+<div style="padding-left: 30px;
+line-height: 40px;
+ font-family: Arial, Helvetica, sans-serif;"> Hikers 50&rdquo; Inch Framele &#8729;&#8729;&#8729;&#8729;
+ </div>
+   <div style="padding-left: 30px; 
+   font-family: Arial, Helvetica, sans-serif;">&#8358; 295&comma; 700
+   </div> 
+           </div>
+     </div>
+    </div>
+    <div class="product-images" style=" 
+        border: solid 5px; 
+        border-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 260px 260px 260px 260px 1fr ;
+        margin-top: 30px;
+row-gap: 40px;
+column-gap: 20px;
+        ">
+        <div style=" border: solid 5px; border-color: whitesmoke;">
+            <img src="products/nivea.jpg">
+            <div class="product-info">
+                Mi&plus; 43&rdquo; Inches Frameless&#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 199&comma;199
+            </div>
+        </div>
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/redmi.jpg">
+            <div class="product-info">
+                Royal 32 Inches Digital&#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 123&comma;900
+            </div>
+        </div>
+        <div style=" border: solid 5px; border-color: whitesmoke;
+                 
+                ">
+            <img src="products/silvercrest.jpg">
+            <div class="product-info">
+                Royal 50&rdquo; Inch QLED TV &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 313&comma;950
+            </div>
+        </div>
+
+
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/10-steps.jpg">
+            <div class="product-info">
+                itel 40&#8208; Inch Smart TV wit &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 206&comma; 835
+            </div>
+        </div>
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/nivea-radiant.jpg">
+            <div class="product-info">
+               Nexus 43&rdquo; Inch Digital S &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 208&comma; 795
+            </div>
+            </div>
+            </div>
+            <div class="product-images" style=" 
+        border: solid 5px; 
+        border-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 260px 260px 260px 260px 1fr ;
+        margin-top: 30px;
+row-gap: 40px;
+column-gap: 20px;">
+            
+        <div style=" border: solid 5px; border-color: whitesmoke;">
+            <img src="products/fridge.jpg">
+            <div class="product-info">
+                Hikers 50&rdquo; Inch Framele &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 295&comma; 700
+            </div>
+        </div>
+
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/iron.jpg">
+            <div class="product-info">
+                Sonivia Powerful bluetooth &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 29&comma; 999
+            </div>
+        </div>
+
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/bluetooth.jpg">
+            <div class="product-info">
+                Hisense 55&rdquo; Inches UHD &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 528&comma; 120
+            </div>
+        </div>
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/power-bank.jpg">
+            <div class="product-info">
+                Infinity 32&rdquo; INCHES SMA &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 139&comma; 990
+            </div>
+        </div>
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/palasa.jpg">
+            <div class="product-info">
+                Tedber Bolan 900D Sen &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 82&comma; 100
+            </div>
+        </div>
+        </div>
+        <div class="product-images" style=" 
+        border: solid 5px; 
+        border-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 260px 260px 260px 260px 1fr;
+        margin-top: 30px;
+row-gap: 40px;
+column-gap: 20px;">
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/2.jpg">
+            <div class="product-info">
+                Tedber Bolan 900D Sen &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 82&comma; 100
+            </div>
+        </div>
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/2.jpg">
+            <div class="product-info">
+                Tedber Bolan 900D Sen &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 82&comma; 100
+            </div>
+        </div>
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/2.jpg">
+            <div class="product-info">
+                Tedber Bolan 900D Sen &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 82&comma; 100
+            </div>
+        </div>
+        <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/2.jpg">
+            <div class="product-info">
+                Tedber Bolan 900D Sen &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 82&comma; 100
+            </div>
+        </div>
+         <div style="  border: solid 5px; border-color: whitesmoke;">
+            <img src="products/2.jpg">
+            <div class="product-info">
+                Tedber Bolan 900D Sen &#8729;&#8729;&#8729;&#8729;
+            </div>
+            <div class="product-price">
+                &#8358; 82&comma; 100
+            </div>
+        </div>
+       
+  <img src="products/nivea-radiant.jpg">
+  <img src="products/nivea.jpg"   width="260">
+  <img src= "products/royal.jpg" width="260">
+  <img src="products/silvercrest.jpg" width="260">
+</div>
+    </body>
+    </html>
